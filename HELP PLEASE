@@ -1,0 +1,8 @@
+Unable to send message. Check sender, recipients and message body
+Traceback (most recent call last):
+  File "/home/kali/smtp-email-spoofer-py/spoofer/models/smtpconnection.py", line 97, in send_mail                                                         
+    self.server.sendmail(self.sender, self.recipients, message.as_string())  
+  File "/usr/lib/python3.11/smtplib.py", line 887, in sendmail               
+    raise SMTPSenderRefused(code, resp, from_addr)                           
+smtplib.SMTPSenderRefused: (421, b'4.4.2 ci74p00im-qukt09081501.me.com Error: timeout exceeded', 'Golden00foxx@icloud.com')                               
+                                                     
